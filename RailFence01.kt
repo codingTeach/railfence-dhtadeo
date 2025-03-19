@@ -67,9 +67,9 @@ fun main() {
         val clave = JOptionPane.showInputDialog("Ingrese la clave:")?.toIntOrNull() ?: continue
 
         val resultado = if (eleccion == 0) {
-            cifrarRailFence(mensaje, clave)
+            cifrarRailFence(mensaje,clave)
         } else {
-            descifrarRailFence(mensaje, clave)
+            descifrarRailFence(mensaje,clave)
         }
 
         JOptionPane.showMessageDialog(null, "Resultado: $resultado")
